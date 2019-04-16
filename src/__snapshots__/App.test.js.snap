@@ -4,29 +4,19 @@ exports[`<App /> matches snapshot 1`] = `
 <div
   className="App"
 >
-  <header
-    className="App-header"
+  <button
+    onClick={[Function]}
   >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <p>
-      Edit 
-      <code>
-        src/App.js
-      </code>
-       and save to reload... if you dare, because the snappening is upon us! You press 'u' to update your changes if that is what you want!
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
-  </header>
+    Speak
+  </button>
+  <div>
+    Nothing to say
+  </div>
+  <button>
+    Save
+  </button>
+  <button>
+    Delete
+  </button>
 </div>
 `;

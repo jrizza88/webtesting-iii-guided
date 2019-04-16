@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Speaker from './speaker/Speaker';
 
 class App extends Component {
+  state = {
+    message: 'Nothing to say'
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        {/* <header className="App-header">
           <p>
             Edit <code>src/App.js</code> and save to reload... if you dare, because the snappening is upon us!
             You press 'u' to update your changes if that is what you want!
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        </header> */}
+        <Speaker message={this.state.message} speak={this.speak}/>
       </div>
     );
+  }
+
+  speak = () => {
+    this.setState({ message: 'you are not mocking me!'})
   }
 }
 
